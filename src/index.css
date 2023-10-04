@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+background-color: rgb(25, 29, 67);
+}
+.Heading{
+  margin-top: 5vh;
+  color: rgb(51, 208, 208);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5vw;
+}
+
+.container{
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-box{
+  position: relative;
+  display: grid;
+  left: 0%;
+  color: white;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(3,100px);
+}
+
+
+
+@keyframes slideAnimate{
+  0%{
+    left: 0%;
+  }
+  100%{
+    left: 10%;
+  }
+}
+.box-item{
+  cursor: pointer;
+  border: 2px solid cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gabarito', cursive;
+}
+
+.play-again{
+  color: cyan;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  height: 49px;
+  width: 85px;
+  font-weight:600;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  background-color: cyan;
+  border-radius: 1vw;
+  outline: none;
+  border: 2px solid white;
+  color: rgb(25, 29, 67);
+}
+
+.btn:hover{
+  background-color:rgb(22, 25, 50);
+  color: white;
+  border: 2px solid cyan;
+  width: 86px;
+  height: 50px;
+  font-size: 14px;
+}
+
+.inner-box{
+  font-size: 7vh;
+  font-weight: 600
+}
+
+@media screen and (max-width:800px){
+  .game-box{
+    grid-template-columns: repeat(3,80px);
+    grid-template-rows: repeat(3,80px);
+  }
+
+  .btn{
+    height: 43px;
+    width: 79px;
+    font-size: 10px;
+  }
+
+  .btn:hover{
+    height: 44px;
+    width: 80px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .game-box{
+    grid-template-columns: repeat(3,60px);
+    grid-template-rows: repeat(3,60px);
+  }
+  .Heading{
+    font-size: 10px;
+  }
+  .btn{
+    height: 39px;
+    width: 75px;
+    font-size: 9px;
+  }
+  .btn:hover{
+    height: 40px;
+    width: 76px;
+    font-size: 9px;
+  }
+  }
